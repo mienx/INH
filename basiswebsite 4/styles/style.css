@@ -1,0 +1,61 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+
+
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* startje */
+	--color-text:#111;
+	--color-background:#eee;
+	--kleuren-van-de-headings:black;
+	
+	
+
+}
+
+
+@font-face {
+	font-family:'lettertype';
+	src: url(/font/Century\ Gothic.ttf);
+}
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+/* jouw code */
+
+main{
+	font-family: 'lettertype';
+}
+
+ul {
+	--item-tekst:black;
+	position: relative;
+	margin: 0;
+	padding: 1em;
+	display: flex;
+	/* flex-grow: 1; */
+	list-style: none;
+	width: 1;
+
+}
+
+li{
+	padding: 5em;
+	color: var(--item-tekst);
+	flex-grow: 1;
+	
+	
+
+}
