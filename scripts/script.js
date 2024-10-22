@@ -1,7 +1,7 @@
 // JavaScript Document
 console.log("hi");
 
-const menuOpenButton = document.querySelector("li > button");
+const menuOpenButton = document.querySelector("header button:nth-of-type(1)");
 const deNav = document.querySelector("header nav");
 
 
@@ -11,13 +11,14 @@ menuOpenButton.onclick = openMenu;
 
 function openMenu(){
   deNav.classList.add("toonMenu")
+  // menuSluitButton.hidden = false;
   
 }
 
 
 // sluiten button
 
-const menuSluitButton = document.querySelector("nav button");
+const menuSluitButton = document.querySelector("li > button");
 
 
 menuSluitButton.onclick = sluitMenu;
