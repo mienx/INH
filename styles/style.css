@@ -39,13 +39,13 @@
 
 @font-face {
 	font-family: 'Logo';
-	src: url(/font/Savinder\ Regular.ttf);
+	src: url(../font/Savinder\ Regular.ttf);
 }
 
 
 @font-face {
 	font-family: 'lettertype';
-	src: url(/font/Century\ Gothic.ttf);
+	src: url(../font/Century\ Gothic.ttf);
 }
 
 
@@ -70,9 +70,10 @@ h1 {
 
 }
 
-a {
+header a {
 
 	color: var(--color-text);
+	text-decoration: none;
 
 }
 
@@ -163,8 +164,16 @@ button {
 nav ul a {
 	display: flex;
 	justify-content: space-between;
+	border-top: solid 0.5px var(--color-text);
 }
 
+nav ul a svg {
+	fill: var(--color-text);
+	width: 1.5em;
+	height: 1.5em;
+
+
+}
 
 
 /* begin van de main  */
@@ -261,7 +270,7 @@ main section:nth-of-type(4) ul {
 }
 
 main section:nth-of-type(5) {
-	margin-top: 2.5rem;
+	margin-top: 2.5em;
 }
 
 main section:nth-of-type(5) ul {
@@ -277,8 +286,15 @@ main section:nth-of-type(5) ul li {
 	height: 50%;
 	scroll-snap-align: start;
 	display: grid;
+	position: relative;
 	/* grid-template-columns: repeat(1, 1fr); */
 	/* grid-template-rows: repeat(1, 1fr); */
+}
+
+main section:nth-of-type(5) h3{
+	position: absolute;
+	top:1em;
+	margin-left: 1em;
 }
 
 main section:nth-of-type(5) ul li img {
@@ -289,13 +305,7 @@ main section:nth-of-type(5) ul li img {
 	grid-row: 1;
 }
 
-main section:nth-of-type(5) ul li h3 {
-	grid-column: 1;
-	grid-row: 1;
-	text-align: center;
-	padding: 1rem;
-	z-index: 4;
-}
+
 
 
 main ul img {
@@ -303,11 +313,7 @@ main ul img {
 }
 
 
-@media (width > 32em) {
-	main>section:nth-of-type(4) {
-		grid-template-columns: repeat(2, 1fr);
-	}
-}
+
 
 main ul:nth-of-type(2) {
 	display: flex;
@@ -407,14 +413,14 @@ footer section:nth-of-type(3) {
 	cursor: pointer;
 }
 
-footer h2{
-font-size: 1em;
+footer h3 {
+	font-size: 1em;
 
 }
 
-footer section:nth-of-type(3) p{
+footer section:nth-of-type(3) p {
 	font-size: 0.8em;
-	
+
 }
 
 footer section:nth-of-type(4) {
@@ -423,13 +429,13 @@ footer section:nth-of-type(4) {
 	cursor: pointer;
 }
 
-footer h2{
-font-size: 1em;
+footer h3 {
+	font-size: 1em;
 }
 
-footer section:nth-of-type(4) p{
+footer section:nth-of-type(4) p {
 	font-size: 0.8em;
-	
+
 }
 
 footer section:nth-of-type(5) {
@@ -438,16 +444,27 @@ footer section:nth-of-type(5) {
 	cursor: pointer;
 }
 
-footer h2{
-font-size: 1em;
+footer h3 {
+	font-size: 1em;
 }
 
-footer section:nth-of-type(5) p{
+footer section:nth-of-type(5) p {
 	font-size: 0.8em;
-	
+
 }
 
-footer h2:hover{
+footer p:hover {
 	color: var(--color-text);
 	transition: var(--color-text) 0.3 ease;
+}
+
+@media (min-width: 800px) {
+	header a {
+		margin: 0 auto;
+	}
+
+	video{
+		width: 70em;
+		height: 65em;
+	}
 }
