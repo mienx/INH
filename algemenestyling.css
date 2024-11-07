@@ -48,37 +48,6 @@
 	src: url(../font/Century\ Gothic.ttf);
 }
 
-@media (prefers-color-scheme: dark){
-	main{
-		background: var(--color-text);
-		color: white;
-	}
-
-	main h3{
-		color: var(--color-text);
-	}
-
-	footer{
-		background: var(--color-text);
-	}
-
-	footer section:nth-of-type(2) form button {
-		background-color:var(--kleur-van-text-in-footer);
-	}
-
-	footer section p {
-		transition: 1s;
-	}
-	
-	footer section p:hover {
-		color: var(--kleur-van-text-in-footer);
-		
-	}
-	
-	
-
-	
-}
 
 body {
 	font-family: "lettertype";
@@ -202,224 +171,7 @@ nav ul a svg {
 
 }
 
-
-/* begin van de main  */
-
-/* eerste sectie */
-video {
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
-
-
-
-main>section h2 {
-	margin-top: 2em;
-}
-
-
-main>section p {
-	margin-top: 1em;
-}
-
-main>section:first-of-type {
-	text-align: center;
-	font-size: 0.8em;
-	width: 100%;
-}
-
-
-
-/* eerste sectie */
-
-/* tweede sectie */
-
-/* main section:nth-of-type(2) {
-	position: relative;
-	text-align: center;
-} */
-
-main>section:nth-of-type(2) {
-	display: flex;
-	flex-direction: column;
-	gap: 1rem;
-}
-
-main>section:nth-of-type(2) article {
-	position: relative;
-	aspect-ratio: 1/1;
-	width: 100%;
-	height: 100%;
-}
-
-main>section:nth-of-type(2) article img {
-	width: 100%;
-	height: 93%;
-	object-fit: cover;
-	object-position: top;
-}
-
-
-main>section:nth-of-type(2) {
-	position: relative;
-	text-align: center;
-}
-
-main>section:nth-of-type(2) img {
-	width: 100%;
-	height: 30em;
-
-}
-
-main>section:nth-of-type(2) h2 {
-	position: absolute;
-	font-size: 1em;
-	bottom: 1em;
-	z-index: 99;
-	left: 1em;
-	color: var(--kleur-in-de-plaatjes);
-}
-
-main a {
-	
-	color: var(--color-text);
-}
-
-main a:hover{
-	background-color: var(--kleur-van-text-in-footer);
-	/* transition: var(--color-text) 0.3 ease; */
-
-
-}
-/* derde sectie */
-
-main>section:nth-of-type(3) {
-	position: relative;
-	text-align: center;
-}
-
-main>section:nth-of-type(3) ul li img {
-	width: 100%;
-	height: fit-content;
-	object-fit: contain;
-
-
-}
-
-main>section:nth-of-type(3) h2 {
-	position: absolute;
-	font-size: 1em;
-	bottom: 1em;
-	left: 1em;
-	color: var(--color-text);
-}
-
-
-main section:nth-of-type(3) ul {
-	top: 2em;
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: repeat(2, 1fr);
-	grid-column-gap: 2px;
-	grid-row-gap: 2px;
-	position: relative;
-}
-
-main section:nth-of-type(3) ul li {
-	position: relative;
-}
-
-main section:nth-of-type(3) ul li h3 {
-	width: 100%;
-	margin: 1rem 0;
-	position: absolute;
-	top: 0;
-
-}
-
-main section:nth-of-type(4) h2{
-	opacity: 0;
-}
-main section:nth-of-type(4) {
-	margin-top: 2.5em;
-}
-
-main section:nth-of-type(4) ul {
-	width: 100%;
-	overflow-x: auto;
-	padding: 0;
-	gap: 2rem;
-	scroll-snap-type: x mandatory;
-}
-
-main section:nth-of-type(4) ul li {
-	width: 100%;
-	height: 50%;
-	scroll-snap-align: start;
-	display: grid;
-	position: relative;
-	/* grid-template-columns: repeat(1, 1fr); */
-	/* grid-template-rows: repeat(1, 1fr); */
-}
-
-main section:nth-of-type(4) h3 {
-	position: absolute;
-	top: 1em;
-	margin-left: 1em;
-}
-
-main section:nth-of-type(4) ul li img {
-	width: 400px;
-	height: 400px;
-	object-fit: cover;
-	grid-column: 1;
-	grid-row: 1;
-}
-
-
-
-
-main ul img {
-	width: 100%;
-}
-
-
-
-
-main ul:nth-of-type(2) {
-	display: flex;
-	overflow-y: scroll;
-	width: 100%;
-	gap: 3rem;
-	margin: 0;
-	padding: 0;
-	/* margin-left: 1em;
-    margin-top: 2em; */
-	scroll-snap-type: x mandatory;
-
-}
-
-main ul:nth-of-type(2) img {
-	width: 300px;
-
-}
-
-
-main ul:nth-of-type(2) img {
-	overflow-clip-margin: content-box;
-	overflow: clip;
-}
-
-
-/* hier begint de footer  */
-/* ik had geen h2 in de footer  */
-
-footer section:first-of-type h2{
-	opacity: 0;
-}
+/* footer */
 
 footer {
 	padding: 2rem;
@@ -439,7 +191,7 @@ footer section ul li {
 	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 1rem;
-
+	/* border-top: solid 1px pink; */
 	padding-top: 1em;
 }
 
@@ -483,9 +235,10 @@ footer p {
 	color: var(--kleur-van-text-in-footer);
 }
 
-
-/* tweede deel footer  */
-
+footer p:hover {
+	color: var(--color-text);
+	transition: var(--color-text) 0.3 ease;
+}
 
 
 footer h3 {
@@ -505,41 +258,57 @@ footer>section:nth-of-type(3) {
 footer section:nth-of-type(3) section:nth-of-type(1),
 footer section:nth-of-type(3) section:nth-of-type(2),
 footer section:nth-of-type(3) section:nth-of-type(3) {
+
 	padding-top: 2em;
 	cursor: pointer;
 }
 
-/* transitie tijdens het hoveren */
-
-footer p {
-	transition: .5s;
-}
-
-footer p:hover {
-	color: var(--color-text);
-	transition: var(--color-text) 0.3 ease;
-}
-
-@media (min-width: 800px) {
+@media (min-width: 500px) {
 	header a {
 		margin: 0 auto;
 	}
 
-	video {
-		width: 75em;
-		height: 65em;
-	}
+    main section ul {
+        display: flex;
+        flex-direction: row;
 
-	main>section:nth-of-type(2),
-	main>section:nth-of-type(3) {
-		flex-direction: row;
-	}
+    }
 
-	main section:nth-of-type(3) ul {
-		display: flex;
-	}
+    main section:first-of-type button {
+        width: 7em;
+        position: absolute;
+        top: 5em;
+        margin-top: 6em;
+        margin-left: 4em;
+        left: 1em;
+        padding: 0.5em 0.75em;
+        border-radius: 0.50em;
+        background-color: var(--kleuren-van-de-header);
+        cursor: pointer;
+        font-size: 0.7em;
+    }
+    main img {
+        width: 35em;
+        height: 35em;
+        object-fit: cover;
+        /* grid-column: 1; */
+        /* grid-row: 1; */
+    }
 
-	footer section ul {
+    main section:nth-of-type(1),
+    main section:nth-of-type(2),
+    main section:nth-of-type(3),
+    main section:nth-of-type(4),
+    main section:nth-of-type(5) {
+        padding: 2rem;
+    }
+
+    section:nth-of-type(5) button{
+        width: 40em;
+
+    }
+
+    footer section ul {
 		display: flex;
 		flex-direction: row;
 	}
@@ -572,4 +341,12 @@ footer p:hover {
 		display: flex;
 		flex-direction: column;
 	}
+
+    main section:nth-of-type(3) img {
+        width: 10em;
+        height: 10em;
+
+    }
+    
+
 }
